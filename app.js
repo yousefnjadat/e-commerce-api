@@ -20,19 +20,19 @@ app.use('/Members', require('./routs/member.routs'));
 const http = require('http');
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 8080;
 
 var connection = require('./connections');
 app.listen(port, () => {
     console.log('port running in ' + port);
 });
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('dsclenvuiwerasiHello World');
-});
+// const server = http.createServer((req, res) => {
+//     res.statusCode = 200;
+//     res.setHeader('Content-Type', 'text/plain');
+//     res.end('dsclenvuiwerasiHello World');
+// });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-}); 
+// server.listen(port, hostname, () => {
+//     console.log(`Server running at http://${hostname}:${port}/`);
+// }); 
